@@ -2,16 +2,14 @@
 
 So you've written an [extension](/extensions/basics). Awesome! Now you want to add some documentation to help people use it. Great! Maybe you even want some docs for other *developers* working on it too. Very good. This page will help you set up your own documentation *book* (just like this Developer Guide) for your extension.
 
-<!-- (commented out until we can get the CiviVolunteer book up)
 !!! summary "Example"
     For a fully-featured working example of extensions documentation, look at CiviVolunteer.
 
     * Read the published [CiviVolunteer book](https://docs.civicrm.org/volunteer/en/latest/)
     * Inspect the following source code to see how it's made:
-        * [`/docs/`](https://github.com/civicrm/org.civicrm.volunteer/tree/master/docs) within the project repo (to store all the content in markdown files)
-        * [`/mkdocs.yml`](https://github.com/civicrm/org.civicrm.volunteer/blob/master/mkdocs.yml) within the project repo (to specify book structure)
-        * [`/books/volunteer.yml`](https://github.com/civicrm/civicrm-docs/blob/master/books/volunteer.yml) within the `civicrm-docs` repo (to specify how the book is to be published)
--->
+        * [/docs/](https://github.com/civicrm/org.civicrm.volunteer/tree/master/docs) within the project repo (to store all the content in markdown files)
+        * [/mkdocs.yml](https://github.com/civicrm/org.civicrm.volunteer/blob/master/mkdocs.yml) within the project repo (to specify book structure)
+        * [/books/volunteer.yml](https://github.com/civicrm/civicrm-docs/blob/master/books/volunteer.yml) within the `civicrm-docs` repo (to specify how the book is to be published)
 
 ## Overview
 
@@ -105,10 +103,10 @@ Once your book is in good shape it's time to get it up on [docs.civicrm.org](htt
 1. For the file name, use something like `foobar.yml`, where "foobar" is your extension's **short name**. This is the name that will be used in the URL for your docs.
 1. Copy paste the following content into the file editor:
 
-    ```
+    ```yaml
     name: Foo Bar
-	description: Provides a baz for every contact's bat
-    languages:
+    description: Provides a baz for every contact's bat
+    langs:
       en:
         repo: 'https://github.com/username/org.civicrm.foobar'
     ```

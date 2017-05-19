@@ -11,21 +11,20 @@ data-management applications.  As staff, volunteers, and consultants for
 non-profit organizations, we can share our new enhancements and extensions
 &mdash; and build a richer whole for the entire ecosystem.
 
-Of course, this sharing arrangement means that many members of the community
-have split roles. For example:
+Of course, this collaboration means that we're all engaged in some give-and-take. 
+We alternate between two roles:
 
--   **Consumers** want to quickly browse the available
-    extensions, pick the ones which look best, and install them. They
-    expect the extensions to just work &mdash; both now and going forward (with
+-   **Consumers**: Sometimes we're the receivers. We want to quickly browse the available
+    extensions, pick the ones which look best, and install them. We
+    expect the extensions to work &mdash; both now and going forward (with
     future upgrades).
--   **Developers** enjoy building great functionality, and
-    want to invite people to use their products, but need to juggle the
+-   **Developers**: Sometimes we're the providers. We enjoy building great functionality, and
+    want to invite people to use our products, but need to juggle the
     publishing tasks (like testing and maintenance releases) with the goals
-    and resources provided by their bosses and clients.
+    and resources provided by our bosses and clients.
 
-With our extension life cycle processes, we seek to build an ecosystem that
-meets the needs of both consumers and developers, while acknowledging that many
-people often play both roles.
+With the extension life-cycle described here, we seek to build an ecosystem that
+balances the needs of both consumers and developers.
 
 ## Definitions
 
@@ -257,7 +256,8 @@ automated distribution:
 | Coding	| Automated tests execute within 3 minutes (or less)	| No	| *Suggested*
 | Coding	| All dependencies are at similar stage (Ex: A stable project should not depend on an experimental project)	| No	| **Required**
 | Coding	| All strings are wrapped in ts()	| *Suggested*	| **Required**
-| Coding	| The project does not *override* `PHP`, `TPL`, `JS`, or `SQL` from civicrm-core	| **Required**	| **Required**
+| Coding	| The project does not *override* `PHP` or `TPL` files from civicrm-core	| **Required**	| **Required**
+| Coding	| The project does not modify the `SQL` schema of a standard civicrm-core table	| **Required**	| **Required**
 | Coding	| The project does not *conflict* with other official projects	| *Suggested*	| *Suggested*
 | Distribution	| The project is packaged as a CiviCRM Extension, Drupal Module, Backdrop Module, Joomla Extension, or WordPress plugin	| **Required**	| **Required**
 | Distribution	| The project has a stable version (1.0+; not alpha or beta)	| **Required**	| **Required**
